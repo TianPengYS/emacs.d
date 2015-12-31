@@ -1,0 +1,37 @@
+
+;; ----- smex-history -----
+(
+ shell
+ evil-mode
+ list-packages
+ calc
+ align
+ c-set-style
+ eval-buffer
+)
+
+;; ----- smex-data -----
+(
+ (shell . 31)
+ (c-set-style . 3)
+ (eval-buffer . 9)
+ (scroll-bar-mode . 1)
+ (customize-themes . 4)
+ (align . 8)
+ (menu-bar-mode . 1)
+ (tool-bar-mode . 1)
+ (删除空白字符 . 3)
+ (revert-buffer . 8)
+ (view-register . 1)
+ (list-registers . 3)
+ (mark-page . 1)
+ (mark-word . 2)
+ (set-mark-command . 2)
+ (jump-to-register . 3)
+ (point-to-register . 1)
+ (viper-mode . 1)
+ (list-packages . 2)
+ (evil-mode . 24)
+ (kill-emacs . 2)
+ (calc . 1)
+)

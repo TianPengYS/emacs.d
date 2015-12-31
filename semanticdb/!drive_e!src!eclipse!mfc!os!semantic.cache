@@ -1,0 +1,334 @@
+;; Object os/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "os/"
+  :tables
+  (list
+    (semanticdb-table "main.cpp"
+      :major-mode 'c++-mode
+      :tags 
+        '( ("windows.h" include (:system-flag t) nil [1 21])
+            ("stdio.h" include (:system-flag t) nil [23 41])
+            ("stdlib.h" include (:system-flag t) nil [42 61])
+            ("jni.h" include (:system-flag t) nil [62 78])
+            ("math.h" include (:system-flag t) nil [79 96])
+            ("mfcjni_main.h" include nil nil [98 122])
+            ("LENGTH" variable (:constant-flag t) nil [132 138])
+            ("fun.h" include (:typemodifiers ("extern" "\"C\"")) (reparse-symbol extern-c-contents) [183 199])
+            ("assert" variable (:constant-flag t) nil [211 217])
+            ("ZT_USBBOARD" type
+               (:members 
+                  ( ("lIndex" variable (:type "long") (reparse-symbol classsubparts) [920 932])
+                    ("hHandle" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol classsubparts) [937 952])
+                    ("nCh" variable (:type "short") (reparse-symbol classsubparts) [957 967])
+                    ("lData" variable (:type "long") (reparse-symbol classsubparts) [972 983])
+                    ("plData" variable
+                       (:pointer 1
+                        :type "unsigned long")
+                        (reparse-symbol classsubparts) [988 1010])
+                    ("lCode" variable (:type "long") (reparse-symbol classsubparts) [1015 1026]))                  
+                :type "struct")
+                nil [876 1029])
+            ("err_code" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "int")
+                nil [1042 1066])
+            ("modbus" variable
+               (:typemodifiers ("static")
+                :default-value "NULL"
+                :type ("HANDLE" type (:type "class") nil nil))
+                nil [1068 1096])
+            ("OpenUSB7kC" variable
+               (:typemodifiers ("static")
+                :default-value "NULL"
+                :type ("func" type (:type "class") nil nil))
+                nil [1145 1175])
+            ("CloseUSB7kC" variable
+               (:typemodifiers ("static")
+                :default-value "NULL"
+                :type ("func" type (:type "class") nil nil))
+                nil [1176 1207])
+            ("USB7325AI" variable
+               (:typemodifiers ("static")
+                :default-value "NULL"
+                :type ("func" type (:type "class") nil nil))
+                nil [1208 1237])
+            ("zt" variable
+               (:typemodifiers ("static")
+                :type ("ZT_USBBOARD" type (:type "class") nil nil))
+                nil [1239 1261])
+            ("send_buf" variable
+               (:dereference 1
+                :type "unsigned char")
+                nil [1263 1291])
+            ("recv_buf" variable
+               (:dereference 1
+                :type "unsigned char")
+                nil [1292 1320])
+            ("send_sum" variable
+               (:default-value "0"
+                :type "int")
+                nil [1322 1339])
+            ("recv_sum" variable
+               (:default-value "0"
+                :type "int")
+                nil [1340 1357])
+            ("modbus_link" function
+               (:arguments 
+                  ( ("comport" variable (:type "int") (reparse-symbol arg-sub-list) [1378 1390])
+                    ("baud" variable (:type "int") (reparse-symbol arg-sub-list) [1391 1400]))                  
+                :type ("HANDLE" type (:type "class") nil nil))
+                nil [1359 2888])
+            ("Modbus_Order" function
+               (:arguments 
+                  ( ("modbus" variable (:type ("HANDLE" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [2907 2921])
+                    ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2922 2942])
+                    ("send_len" variable (:type "int") (reparse-symbol arg-sub-list) [2943 2956])
+                    ("recv_len" variable (:type "int") (reparse-symbol arg-sub-list) [2957 2970]))                  
+                :type "int")
+                nil [2890 3776])
+            ("modbus_init" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [3832 3844])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3845 3858])
+                    ("com" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3859 3868])
+                    ("baud" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [3869 3879]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [3812 3970])
+            ("modbus_close" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4004 4016])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4017 4030]))                  
+                :type "void")
+                nil [3986 4114])
+            ("modbus_read_reg" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [4141 4153])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4154 4167])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [4168 4175])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [4176 4185])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [4186 4194])
+                    ("array" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [4220 4236]))                  
+                :type ("jboolean" type (:type "class") nil nil))
+                nil [4116 5222])
+            ("modbus_write_reg" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [5250 5262])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5263 5276])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [5277 5284])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [5285 5294])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [5295 5303])
+                    ("array" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [5330 5346]))                  
+                :type ("jboolean" type (:type "class") nil nil))
+                nil [5224 6200])
+            ("modbus_read_write_reg" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [6233 6245])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6246 6259])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [6260 6267])
+                    ("read_addr" variable (:type "int") (reparse-symbol arg-sub-list) [6268 6282])
+                    ("read_sum" variable (:type "int") (reparse-symbol arg-sub-list) [6314 6327])
+                    ("write_addr" variable (:type "int") (reparse-symbol arg-sub-list) [6328 6343])
+                    ("write_sum" variable (:type "int") (reparse-symbol arg-sub-list) [6344 6358])
+                    ("array" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [6359 6375]))                  
+                :type ("jboolean" type (:type "class") nil nil))
+                nil [6202 7597])
+            ("modbus_read_bit" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [7624 7636])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7637 7650])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [7651 7658])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [7659 7668])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [7669 7677])
+                    ("array" variable (:type ("jbooleanArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [7703 7723]))                  
+                :type ("jboolean" type (:type "class") nil nil))
+                nil [7599 8291])
+            ("modbus_write_bit" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [8319 8331])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8332 8345])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [8346 8353])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [8354 8363])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [8364 8372])
+                    ("array" variable (:type ("jbooleanArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8399 8419]))                  
+                :type ("jboolean" type (:type "class") nil nil))
+                nil [8293 8794])
+            ("GetSystemBits" function (:type "int") nil [8806 9081])
+            ("usb7325_init" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9120 9132])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9133 9146]))                  
+                :type ("jboolean" type (:type "class") nil nil))
+                nil [9098 9708])
+            ("get_usb7325_value" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [9751 9763])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9764 9777])
+                    ("channel" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [9778 9791]))                  
+                :type ("jdouble" type (:type "class") nil nil))
+                nil [9725 10117])
+            ("usb7325_close" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10151 10163])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10164 10177]))                  
+                :type "void")
+                nil [10132 10203])
+            ("get_error_code" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10248 10260])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10261 10274]))                  
+                :type ("jint" type (:type "class") nil nil))
+                nil [10228 10294])
+            ("get_error_string" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10321 10333])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10334 10347]))                  
+                :type ("jstring" type (:type "class") nil nil))
+                nil [10296 10868])
+            ("calResponseTime" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [10891 10903])
+                    ("thiz" variable (:type ("jobject" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10904 10917])
+                    ("setTime" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10918 10936])
+                    ("responseTime" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10958 10981])
+                    ("set" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10982 10996])
+                    ("value" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [10997 11013])
+                    ("size" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11014 11024])
+                    ("error" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11046 11057])
+                    ("step" variable (:type ("jintArray" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11058 11073])
+                    ("step_sum" variable (:type ("jint" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [11074 11088]))                  
+                :type ("jint" type (:type "class") nil nil))
+                nil [10870 11916])
+            ("methods" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{
+    {\"modbusInit\", \"(II)Z\", (void*)modbus_init},
+    {\"modbusClose\", \"()V\", (void*)modbus_close},
+
+    {\"modbusReadReg\", \"(III[I)Z\", (void*)modbus_read_reg},
+    {\"modbusWriteReg\", \"(III[I)Z\", (void*)modbus_write_reg},
+    {\"modbusReadWriteReg\", \"(IIIII[I)Z\", (void*)modbus_read_write_reg},
+    {\"modbusReadBit\", \"(III[Z)Z\", (void*)modbus_read_bit},
+    {\"modbusWriteBit\", \"(III[Z)Z\", (void*)modbus_write_bit},
+
+    {\"usb7325Init\", \"()Z\", (void*)usb7325_init},
+    {\"usb7325Close\", \"()V\", (void*)usb7325_close},
+    {\"getUsb7325Value\", \"(I)D\", (void*)get_usb7325_value},
+
+    {\"getErrorCode\", \"()I\", (void*)get_error_code},
+    {\"getErrorString\", \"()Ljava/lang/String;\", (void*)get_error_string},
+
+    {\"calResponseTime\", \"([I[I[I[III[II)I\", (void*)calResponseTime},
+}"
+                :type ("JNINativeMethod" type (:type "class") nil nil))
+                nil [11936 12742])
+            ("Java_mfcjni_main_load" function
+               (:arguments 
+                  ( ("env" variable
+                       (:pointer 1
+                        :type ("JNIEnv" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [12789 12801])
+                    ("thiz" variable (:type ("jclass" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [12802 12814]))                  
+                :type ("JNICALL" type (:type "class") nil nil))
+                nil [12759 13130]))          
+      :file "main.cpp"
+      :pointmax 14339
+      :fsize 15069
+      :lastmodtime '(22083 58621 0 0)
+      :unmatched-syntax '((VOID 12754 . 12758) (symbol 12744 . 12753) (symbol 3803 . 3811) (symbol 3793 . 3802) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105) (VOID 12754 . 12758) (symbol 12744 . 12753) (symbol 3803 . 3811) (symbol 3793 . 3802) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105) (VOID 12754 . 12758) (symbol 12744 . 12753) (symbol 3803 . 3811) (symbol 3793 . 3802) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105) (VOID 12754 . 12758) (symbol 12744 . 12753) (symbol 3803 . 3811) (symbol 3793 . 3802) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105) (VOID 12754 . 12758) (symbol 12744 . 12753) (symbol 3803 . 3811) (symbol 3793 . 3802) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105) (symbol 3803 . 3811) (symbol 3793 . 3802) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105) (VOID 12754 . 12758) (symbol 12744 . 12753) (symbol 3803 . 3811) (symbol 3793 . 3802) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105) (VOID 12754 . 12758) (symbol 12744 . 12753) (symbol 3803 . 3811) (symbol 3793 . 3802) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105) (VOID 12754 . 12758) (symbol 12744 . 12753) (symbol 3803 . 3811) (symbol 3793 . 3802) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105) (VOID 12754 . 12758) (symbol 12744 . 12753) (symbol 3803 . 3811) (symbol 3793 . 3802) (punctuation 1142 . 1143) (semantic-list 1125 . 1142) (semantic-list 1111 . 1125) (LONG 1106 . 1110) (TYPEDEF 1098 . 1105))
+      :lexical-table 
+        '(("LENGTH" (spp-arg-list ("a") 138 . 141) . ((semantic-list "(sizeof(a) / sizeof(a[0]))" 142 . 168)))
+          ("assert" (spp-arg-list ("x") 217 . 220) . 
+              ((DO "do" 273 . 275) (semantic-list "{                                                        \\
+        if (!(x))                                               \\
+        {                                                       \\
+            char buf[100];                                      \\
+            sprintf(buf, \"文件:%s LINE:%d 错误码:%d\",           \\
+                    __FILE__, __LINE__, GetLastError());        \\
+            MessageBox(0, buf, 0, 0);                           \\
+            exit(0);                                            \\
+        }                                                       \\
+    }" 276 . 863) (WHILE "while" 864 . 869) (semantic-list "(0)" 870 . 873) (punctuation ";" 873 . 874)))
+          )
+)
+    (semanticdb-table "mfcjni_main.h"
+      :file "mfcjni_main.h"
+      :fsize 2888
+      :lastmodtime '(22083 19554 0 0))
+    (semanticdb-table "fun.h"
+      :file "fun.h"
+      :fsize 2492
+      :lastmodtime '(22081 26321 0 0))
+    (semanticdb-table "makefile"
+      :major-mode 'makefile-gmake-mode
+      :tags 
+        '( ("all" function (:arguments ("mfcjni.jar" "main.exe" "mfc.jar")) nil [1 33])
+            ("main.exe" function (:arguments ("main.cpp" "fun.obj" "main.res" "makefile")) nil [34 405])
+            ("mfcjni.jar" function (:arguments ("mfcjni/main.class" "main.dll" "makefile")) nil [406 500])
+            ("mfc.jar" function (:arguments ("mfc/AboutDialog.class" "mfc/AfcConfig.class" "mfc/Config.class" "mfc/ControlPane.class" "mfc/JmfFrame.class" "mfc/Mfc.class" "mfc/PaintPanel.class" "mfc/TConnection.class" "mfc/TProperties.class" "mfc/Usb7325Config.class")) nil [501 747])
+            ("mfc/AboutDialog.class" function (:arguments ("mfc/AboutDialog.java")) nil [748 819])
+            ("mfc/AfcConfig.class" function (:arguments ("mfc/AfcConfig.java")) nil [819 884])
+            ("mfc/Config.class" function (:arguments ("mfc/Config.java")) nil [884 940])
+            ("mfc/ControlPane.class" function (:arguments ("mfc/ControlPane.java")) nil [940 1011])
+            ("mfc/JmfFrame.class" function (:arguments ("mfc/JmfFrame.java")) nil [1011 1073])
+            ("mfc/Mfc.class" function (:arguments ("mfc/Mfc.java")) nil [1073 1120])
+            ("mfc/PaintPanel.class" function (:arguments ("mfc/PaintPanel.java")) nil [1120 1188])
+            ("mfc/TConnection.class" function (:arguments ("mfc/TConnection.java")) nil [1188 1259])
+            ("mfc/TProperties.class" function (:arguments ("mfc/TProperties.java")) nil [1259 1330])
+            ("mfc/Usb7325Config.class" function (:arguments ("mfc/Usb7325Config.java")) nil [1330 1407])
+            ("main.dll" function (:arguments ("main.cpp" "mfcjni_main.h" "fun.obj" "makefile")) nil [1408 1643])
+            ("mfcjni_main.h" function (:arguments ("mfcjni/main.class" "makefile")) nil [1644 1723])
+            ("mfcjni/main.class" function (:arguments ("mfcjni/main.java" "makefile")) nil [1724 1792])
+            ("run" function nil nil [1793 1831])
+            ("clean" function nil nil [1832 1943]))          
+      :file "makefile"
+      :pointmax 1943
+      :fsize 2000
+      :lastmodtime '(22083 19551 0 0)
+      :unmatched-syntax '((shell-command 1840 . 1942) (bol 1839 . 1839))))
+  :file "!drive_e!src!eclipse!mfc!os!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

@@ -1,0 +1,593 @@
+;; Object mfc/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mfc/"
+  :tables
+  (list
+    (semanticdb-table "Mfc.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("mfc" package nil nil [1 13])
+            ("java.awt.*" include nil nil [15 33])
+            ("java.awt.event.*" include nil nil [34 58])
+            ("java.io.*" include nil nil [59 76])
+            ("java.lang.reflect.*" include nil nil [77 104])
+            ("javax.imageio.ImageIO" include nil nil [106 135])
+            ("javax.swing.*" include nil nil [136 157])
+            ("javax.swing.filechooser.*" include nil nil [158 191])
+            ("javax.swing.table.DefaultTableModel" include nil nil [192 235])
+            ("mfcjni.main" include nil nil [237 256])
+            ("Mfc" type
+               (:typemodifiers ("public")
+                :superclasses "JFrame"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [296 344])
+                    ("paint_panel" variable
+                       (:typemodifiers ("private")
+                        :type "PaintPanel")
+                        (reparse-symbol class_member_declaration) [349 399])
+                    ("leftPane" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JTabbedPane")
+                        (reparse-symbol class_member_declaration) [405 475])
+                    ("controlPane" variable
+                       (:typemodifiers ("private" "final")
+                        :type "ControlPane")
+                        (reparse-symbol class_member_declaration) [480 538])
+                    ("usb7325Config" variable
+                       (:typemodifiers ("private" "final")
+                        :type "Usb7325Config")
+                        (reparse-symbol class_member_declaration) [543 607])
+                    ("afcPane" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JScrollPane")
+                        (reparse-symbol class_member_declaration) [612 666])
+                    ("afcConfig" variable
+                       (:typemodifiers ("private" "final")
+                        :type "AfcConfig")
+                        (reparse-symbol class_member_declaration) [671 723])
+                    ("statusPanel" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JPanel")
+                        (reparse-symbol class_member_declaration) [728 776])
+                    ("modeStatus" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JTextField")
+                        (reparse-symbol class_member_declaration) [781 836])
+                    ("controlStatus" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JTextField")
+                        (reparse-symbol class_member_declaration) [841 899])
+                    ("autozeroStatus" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JTextField")
+                        (reparse-symbol class_member_declaration) [904 963])
+                    ("runStatus" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JTextField")
+                        (reparse-symbol class_member_declaration) [968 1022])
+                    ("mfile" variable
+                       (:typemodifiers ("private")
+                        :type "JMenu")
+                        (reparse-symbol class_member_declaration) [1028 1066])
+                    ("s500" variable
+                       (:typemodifiers ("private")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [1071 1120])
+                    ("afc" variable
+                       (:typemodifiers ("private")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [1125 1172])
+                    ("exit" variable
+                       (:typemodifiers ("private")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [1177 1222])
+                    ("mhelp" variable
+                       (:typemodifiers ("private")
+                        :type "JMenu")
+                        (reparse-symbol class_member_declaration) [1228 1266])
+                    ("about_help" variable
+                       (:typemodifiers ("private")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [1271 1322])
+                    ("start" variable (:type "JButton") (reparse-symbol class_member_declaration) [1328 1362])
+                    ("stop" variable (:type "JButton") (reparse-symbol class_member_declaration) [1367 1400])
+                    ("reset" variable
+                       (:typemodifiers ("private")
+                        :type "JButton")
+                        (reparse-symbol class_member_declaration) [1405 1447])
+                    ("valve_close" variable (:type "JButton") (reparse-symbol class_member_declaration) [1452 1492])
+                    ("valve_vent" variable (:type "JButton") (reparse-symbol class_member_declaration) [1497 1536])
+                    ("valve_control" variable (:type "JButton") (reparse-symbol class_member_declaration) [1541 1583])
+                    ("override" variable (:type "Override") (reparse-symbol class_member_declaration) [1640 1672])
+                    ("overrideChange" variable (:type "boolean") (reparse-symbol class_member_declaration) [1677 1708])
+                    ("setpointInt" variable (:type "int") (reparse-symbol class_member_declaration) [1714 1734])
+                    ("setpointChange" variable (:type "boolean") (reparse-symbol class_member_declaration) [1739 1770])
+                    ("setpointLabel" variable
+                       (:typemodifiers ("private")
+                        :type "JLabel")
+                        (reparse-symbol class_member_declaration) [1776 1824])
+                    ("set" variable
+                       (:typemodifiers ("private")
+                        :type "JButton")
+                        (reparse-symbol class_member_declaration) [1895 1935])
+                    ("testS500Timer" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.Timer")
+                        (reparse-symbol class_member_declaration) [1941 2040])
+                    ("sampleTimer" variable
+                       (:typemodifiers ("private")
+                        :type "javax.swing.Timer")
+                        (reparse-symbol class_member_declaration) [2045 2139])
+                    ("mtest" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenu")
+                        (reparse-symbol class_member_declaration) [2145 2190])
+                    ("test0_100" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [2195 2259])
+                    ("test0_100_0" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [2264 2336])
+                    ("saveImage" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [2341 2399])
+                    ("test2_100" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [2404 2468])
+                    ("test2_0" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [2473 2533])
+                    ("test100_0" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [2538 2602])
+                    ("test0_2" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [2607 2667])
+                    ("test100_2" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [2672 2736])
+                    ("testMode" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JTextField")
+                        (reparse-symbol class_member_declaration) [2741 2794])
+                    ("viewMenu" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenu")
+                        (reparse-symbol class_member_declaration) [2799 2846])
+                    ("fullscreen" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JMenuItem")
+                        (reparse-symbol class_member_declaration) [2851 2908])
+                    ("toolBar" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JToolBar")
+                        (reparse-symbol class_member_declaration) [2913 2961])
+                    ("panel" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JPanel")
+                        (reparse-symbol class_member_declaration) [2966 3008])
+                    ("menubar" variable
+                       (:typemodifiers ("private")
+                        :type "JMenuBar")
+                        (reparse-symbol class_member_declaration) [3014 3056])
+                    ("mainframe" variable (:type "Mfc") (reparse-symbol class_member_declaration) [3062 3083])
+                    ("usb7325_open" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3107 3144])
+                    ("modbus_open" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3149 3185])
+                    ("modbus_get_offset" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3210 3252])
+                    ("modbus_get_gain" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3257 3297])
+                    ("modbus_get_axis" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3302 3342])
+                    ("modbus_get_autozeroSwitch" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3347 3397])
+                    ("modbus_get_autozeroValue" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3402 3451])
+                    ("modbus_get_charge" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3456 3498])
+                    ("modbus_get_scale" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3503 3544])
+                    ("modbus_get_p" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3549 3586])
+                    ("modbus_get_i" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3591 3628])
+                    ("modbus_get_d" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3633 3670])
+                    ("modbus_get_baudSet" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3675 3718])
+                    ("modbus_get_idSet" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3723 3764])
+                    ("modbus_get_range" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3769 3810])
+                    ("modbus_get_unit" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3815 3855])
+                    ("modbus_get_gas" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3860 3899])
+                    ("modbus_get_version" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3904 3947])
+                    ("modbus_get_sn" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3952 3990])
+                    ("modbus_get_temperature" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [3995 4042])
+                    ("modbus_get_quickstart" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4047 4093])
+                    ("debug_mode" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4098 4133])
+                    ("modbus_set_offset" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4139 4181])
+                    ("modbus_set_gain" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4186 4226])
+                    ("modbus_set_autozeroSwitch" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4231 4281])
+                    ("modbus_set_charge" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4286 4328])
+                    ("modbus_set_scale" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4333 4374])
+                    ("modbus_set_p" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4379 4416])
+                    ("modbus_set_i" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4421 4458])
+                    ("modbus_set_d" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4463 4500])
+                    ("modbus_set_baudSet" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4505 4548])
+                    ("modbus_set_idSet" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4553 4594])
+                    ("modbus_set_range" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4599 4640])
+                    ("modbus_set_unit" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4645 4685])
+                    ("modbus_set_gas" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4690 4729])
+                    ("modbus_set_version" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4734 4777])
+                    ("modbus_set_sn" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4782 4820])
+                    ("modbus_set_quickstart" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4825 4871])
+                    ("modbus_save_config" variable
+                       (:typemodifiers ("private")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [4876 4919])
+                    ("table" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JTable")
+                        (reparse-symbol class_member_declaration) [4925 4967])
+                    ("progressBar" variable
+                       (:typemodifiers ("private" "final")
+                        :type "JProgressBar")
+                        (reparse-symbol class_member_declaration) [4972 5032])
+                    ("Mfc" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [5038 19055])
+                    ("locateCenter" function (:type "void") (reparse-symbol class_member_declaration) [19061 19535])
+                    ("addActionListener" function (:type "void") (reparse-symbol class_member_declaration) [19541 21089])
+                    ("setControlMode" function
+                       (:arguments 
+                          ( ("mode" variable (:type "String") (reparse-symbol formal_parameters) [21115 21126]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [21095 21439])
+                    ("clearParamFlag" function (:type "void") (reparse-symbol class_member_declaration) [21445 22166])
+                    ("setRunStatus" function
+                       (:arguments 
+                          ( ("run" variable (:type "boolean") (reparse-symbol formal_parameters) [22190 22201]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22172 22457])
+                    ("changeMode" function
+                       (:arguments 
+                          ( ("m" variable (:type "String") (reparse-symbol formal_parameters) [22479 22487]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [22463 23874])
+                    ("Close" function (:type "void") (reparse-symbol class_member_declaration) [23880 24400])
+                    ("log" function
+                       (:arguments 
+                          ( ("msg" variable (:type "String") (reparse-symbol formal_parameters) [24415 24425]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [24406 24560])
+                    ("SampleTimerListener" type
+                       (:interfaces ("ActionListener")
+                        :members 
+                          ( ("isHaveData" variable (:type "boolean") (reparse-symbol class_member_declaration) [24632 24659])
+                            ("usb7325Value" variable (:type "double") (reparse-symbol class_member_declaration) [24669 24693])
+                            ("afcValue" variable (:type "double") (reparse-symbol class_member_declaration) [24702 24722])
+                            ("setpoint" variable (:type "double") (reparse-symbol class_member_declaration) [24731 24751])
+                            ("data" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol class_member_declaration) [24761 24787])
+                            ("bool" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [24796 24830])
+                            ("getParams" function
+                               (:typemodifiers ("private")
+                                :arguments 
+                                  ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [24890 24896]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [24864 34074])
+                            ("setParams" function
+                               (:typemodifiers ("private")
+                                :arguments 
+                                  ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [34134 34140]))                                  
+                                :type "boolean")
+                                (reparse-symbol class_member_declaration) [34108 40773])
+                            ("handleUsb7325" function
+                               (:typemodifiers ("private")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [40804 41739])
+                            ("handleAfc" function
+                               (:typemodifiers ("private")
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [41766 44150])
+                            ("actionPerformed" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("e" variable (:type "ActionEvent") (reparse-symbol formal_parameters) [44188 44201]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [44160 44981]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [24566 44987])
+                    ("TestS500ActionListener" type
+                       (:interfaces ("ActionListener")
+                        :members 
+                          ( ("actionPerformed" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("e" variable (:type "ActionEvent") (reparse-symbol formal_parameters) [45090 45103]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [45062 48132]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [44993 48138])
+                    ("actionList" variable
+                       (:dereference 1
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [48144 48386])
+                    ("onoffsetAction" function (:type "void") (reparse-symbol class_member_declaration) [48392 48459])
+                    ("ongainAction" function (:type "void") (reparse-symbol class_member_declaration) [48465 48528])
+                    ("onautozeroSwitchAction" function (:type "void") (reparse-symbol class_member_declaration) [48534 48617])
+                    ("onchargeAction" function (:type "void") (reparse-symbol class_member_declaration) [48623 48690])
+                    ("onscaleAction" function (:type "void") (reparse-symbol class_member_declaration) [48696 48761])
+                    ("onpAction" function (:type "void") (reparse-symbol class_member_declaration) [48767 48824])
+                    ("oniAction" function (:type "void") (reparse-symbol class_member_declaration) [48830 48887])
+                    ("ondAction" function (:type "void") (reparse-symbol class_member_declaration) [48893 48950])
+                    ("onbaudSetAction" function (:type "void") (reparse-symbol class_member_declaration) [48956 49025])
+                    ("onidSetAction" function (:type "void") (reparse-symbol class_member_declaration) [49031 49096])
+                    ("onrangeAction" function (:type "void") (reparse-symbol class_member_declaration) [49102 49167])
+                    ("onunitAction" function (:type "void") (reparse-symbol class_member_declaration) [49173 49236])
+                    ("ongasAction" function (:type "void") (reparse-symbol class_member_declaration) [49242 49303])
+                    ("onversionAction" function (:type "void") (reparse-symbol class_member_declaration) [49309 49378])
+                    ("onsnAction" function (:type "void") (reparse-symbol class_member_declaration) [49384 49443])
+                    ("onquickStartAction" function (:type "void") (reparse-symbol class_member_declaration) [49449 49524])
+                    ("onwriteParamAction" function (:type "void") (reparse-symbol class_member_declaration) [49530 49602])
+                    ("onreadParamAction" function (:type "void") (reparse-symbol class_member_declaration) [49608 49670])
+                    ("AfcListener" type
+                       (:interfaces ("ActionListener")
+                        :members 
+                          ( ("actionPerformed" function
+                               (:typemodifiers ("public")
+                                :arguments 
+                                  ( ("e" variable (:type "ActionEvent") (reparse-symbol formal_parameters) [49762 49775]))                                  
+                                :type "void")
+                                (reparse-symbol class_member_declaration) [49734 51328]))                          
+                        :type "class")
+                        (reparse-symbol class_member_declaration) [49676 51334])
+                    ("testResponseTime" function
+                       (:typemodifiers ("public" "static")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [51365 51972])
+                    ("addTestResponse0_100_0" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [51978 52693])
+                    ("addTestResponse0_100" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [52699 53082])
+                    ("addTestResponse0_2" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53088 53463])
+                    ("addTestResponse2_100" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53469 53857])
+                    ("addTestResponse100_2" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [53863 54255])
+                    ("addTestResponse100_0" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [54261 54650])
+                    ("addTestResponse2_0" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [54656 55033])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [55063 55076]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [55039 55419]))                  
+                :type "class")
+                nil [258 55421]))          
+      :file "Mfc.java"
+      :pointmax 55422
+      :fsize 57792
+      :lastmodtime '(22083 19652 0 0)
+      :unmatched-syntax nil)
+    (semanticdb-table "PaintPanel.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("mfc" package nil nil [1 13])
+            ("java.awt.Color" include nil nil [15 37])
+            ("java.awt.Font" include nil nil [38 59])
+            ("java.awt.Graphics" include nil nil [60 85])
+            ("java.awt.event.ActionEvent" include nil nil [86 120])
+            ("java.awt.event.ActionListener" include nil nil [121 158])
+            ("java.awt.font.FontRenderContext" include nil nil [159 198])
+            ("java.awt.geom.AffineTransform" include nil nil [199 236])
+            ("java.awt.image.BufferedImage" include nil nil [237 273])
+            ("java.util.Vector" include nil nil [274 298])
+            ("javax.swing.JPanel" include nil nil [300 326])
+            ("mfcjni.main" include nil nil [328 347])
+            ("PaintPanel" type
+               (:typemodifiers ("public")
+                :superclasses "JPanel"
+                :members 
+                  ( ("serialVersionUID" variable
+                       (:typemodifiers ("private" "static" "final")
+                        :type "long")
+                        (reparse-symbol class_member_declaration) [394 442])
+                    ("saveImage" variable
+                       (:typemodifiers ("public")
+                        :type "BufferedImage")
+                        (reparse-symbol class_member_declaration) [618 656])
+                    ("error" variable (:type "int") (reparse-symbol class_member_declaration) [662 694])
+                    ("step" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [699 717])
+                    ("testResponseTime" variable (:type "boolean") (reparse-symbol class_member_declaration) [735 768])
+                    ("atf" variable (:type "AffineTransform") (reparse-symbol class_member_declaration) [774 818])
+                    ("frc" variable (:type "FontRenderContext") (reparse-symbol class_member_declaration) [823 886])
+                    ("PaintPanel" function
+                       (:constructor-flag t
+                        :typemodifiers ("public"))
+                        (reparse-symbol class_member_declaration) [892 1245])
+                    ("paint" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("g" variable (:type "Graphics") (reparse-symbol formal_parameters) [1269 1279]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1251 4451])
+                    ("drawResponseTime" function
+                       (:typemodifiers ("private")
+                        :arguments 
+                          ( ("gr" variable (:type "Graphics") (reparse-symbol formal_parameters) [4495 4506]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [4465 6263])
+                    ("clearData" function
+                       (:typemodifiers ("public")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6269 6391])
+                    ("add" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("set" variable (:type "int") (reparse-symbol formal_parameters) [6413 6420])
+                            ("value" variable (:type "int") (reparse-symbol formal_parameters) [6422 6431])
+                            ("correct" variable (:type "int") (reparse-symbol formal_parameters) [6433 6444]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6397 6553])
+                    ("setResponseStep" function
+                       (:typemodifiers ("public")
+                        :arguments 
+                          ( ("step" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [6587 6597]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [6559 6932]))                  
+                :type "class")
+                nil [349 6934]))          
+      :file "PaintPanel.java"
+      :pointmax 6935
+      :fsize 7176
+      :lastmodtime '(22083 19408 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_e!src!eclipse!mfc!os!mfc!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

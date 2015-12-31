@@ -1,0 +1,246 @@
+;; Object mfcjni/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "mfcjni/"
+  :tables
+  (list
+    (semanticdb-table "main.java"
+      :major-mode 'jdee-mode
+      :tags 
+        '( ("mfcjni" package nil nil [1 16])
+            ("main" type
+               (:typemodifiers ("public")
+                :members 
+                  ( ("modbusInit" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :arguments 
+                          ( ("com" variable (:type "int") (reparse-symbol formal_parameters) [178 185])
+                            ("baud" variable (:type "int") (reparse-symbol formal_parameters) [187 195]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [125 197])
+                    ("modbusClose" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [202 255])
+                    ("modbusReadReg" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [335 341])
+                            ("addr" variable (:type "int") (reparse-symbol formal_parameters) [343 351])
+                            ("sum" variable (:type "int") (reparse-symbol formal_parameters) [365 372])
+                            ("data" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [374 384]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [279 386])
+                    ("modbusWriteReg" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [449 455])
+                            ("addr" variable (:type "int") (reparse-symbol formal_parameters) [457 465])
+                            ("sum" variable (:type "int") (reparse-symbol formal_parameters) [479 486])
+                            ("data" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [488 498]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [392 500])
+                    ("modbusReadWriteReg" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [567 573])
+                            ("read_addr" variable (:type "int") (reparse-symbol formal_parameters) [587 600])
+                            ("read_sum" variable (:type "int") (reparse-symbol formal_parameters) [602 614])
+                            ("write_addr" variable (:type "int") (reparse-symbol formal_parameters) [616 630])
+                            ("write_sum" variable (:type "int") (reparse-symbol formal_parameters) [632 645])
+                            ("data" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [659 669]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [506 671])
+                    ("modbusReadBit" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [733 739])
+                            ("addr" variable (:type "int") (reparse-symbol formal_parameters) [741 749])
+                            ("sum" variable (:type "int") (reparse-symbol formal_parameters) [763 770])
+                            ("data" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [772 786]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [677 788])
+                    ("modbusWriteBit" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :arguments 
+                          ( ("id" variable (:type "int") (reparse-symbol formal_parameters) [851 857])
+                            ("addr" variable (:type "int") (reparse-symbol formal_parameters) [859 867])
+                            ("sum" variable (:type "int") (reparse-symbol formal_parameters) [881 888])
+                            ("data" variable
+                               (:dereference 1
+                                :type "boolean")
+                                (reparse-symbol formal_parameters) [890 904]))                          
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [794 906])
+                    ("usb7325Init" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [912 968])
+                    ("getUsb7325Value" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :arguments 
+                          ( ("channel" variable (:type "int") (reparse-symbol formal_parameters) [1031 1042]))                          
+                        :type "double")
+                        (reparse-symbol class_member_declaration) [974 1044])
+                    ("usb7325Close" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [1050 1104])
+                    ("getErrorCode" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1110 1163])
+                    ("getErrorString" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :type "String")
+                        (reparse-symbol class_member_declaration) [1168 1226])
+                    ("calResponseTime" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :arguments 
+                          ( ("setTime" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [1286 1299])
+                            ("responseTime" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [1313 1331])
+                            ("set" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [1333 1342])
+                            ("value" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [1344 1355])
+                            ("size" variable (:type "int") (reparse-symbol formal_parameters) [1357 1365])
+                            ("error" variable (:type "int") (reparse-symbol formal_parameters) [1367 1376])
+                            ("step" variable
+                               (:dereference 1
+                                :type "int")
+                                (reparse-symbol formal_parameters) [1390 1400])
+                            ("step_sum" variable (:type "int") (reparse-symbol formal_parameters) [1402 1414]))                          
+                        :type "int")
+                        (reparse-symbol class_member_declaration) [1232 1416])
+                    ("usb7325_open" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1441 1484])
+                    ("modbus_open" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1489 1531])
+                    ("modbus_get_offset" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1556 1604])
+                    ("modbus_get_gain" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1609 1655])
+                    ("modbus_get_axis" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1660 1706])
+                    ("modbus_get_autozeroSwitch" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1711 1767])
+                    ("modbus_get_autozeroValue" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1772 1827])
+                    ("modbus_get_charge" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1832 1880])
+                    ("modbus_get_scale" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1885 1932])
+                    ("modbus_get_p" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1937 1980])
+                    ("modbus_get_i" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [1985 2028])
+                    ("modbus_get_d" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2033 2076])
+                    ("modbus_get_baudSet" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2081 2130])
+                    ("modbus_get_idSet" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2135 2182])
+                    ("modbus_get_range" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2187 2234])
+                    ("modbus_get_unit" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2239 2285])
+                    ("modbus_get_gas" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2290 2335])
+                    ("modbus_get_version" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2340 2389])
+                    ("modbus_get_sn" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2394 2438])
+                    ("modbus_get_temperature" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2443 2496])
+                    ("modbus_get_current" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2501 2550])
+                    ("debug_mode" variable
+                       (:typemodifiers ("public" "static")
+                        :type "boolean")
+                        (reparse-symbol class_member_declaration) [2555 2596])
+                    ("load" function
+                       (:typemodifiers ("public" "static" "native" "synchronized")
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2602 2648])
+                    ("main" function
+                       (:typemodifiers ("public" "static")
+                        :arguments 
+                          ( ("args" variable
+                               (:dereference 1
+                                :type "String")
+                                (reparse-symbol formal_parameters) [2678 2691]))                          
+                        :type "void")
+                        (reparse-symbol class_member_declaration) [2654 3428]))                  
+                :type "class")
+                nil [18 3430]))          
+      :file "main.java"
+      :pointmax 3431
+      :fsize 3571
+      :lastmodtime '(22081 23469 0 0)
+      :unmatched-syntax nil))
+  :file "!drive_e!src!eclipse!mfc!os!mfcjni!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")

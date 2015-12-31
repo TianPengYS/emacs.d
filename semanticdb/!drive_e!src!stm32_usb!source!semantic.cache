@@ -1,0 +1,1181 @@
+;; Object source/
+;; SEMANTICDB Tags save file
+(semanticdb-project-database-file "source/"
+  :tables
+  (list
+    (semanticdb-table "main.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("stm32f10x.h" include (:system-flag t) nil [1 23])
+            ("hw_config.h" include (:system-flag t) nil [24 46])
+            ("usb_istr.h" include (:system-flag t) nil [47 68])
+            ("stdlib.h" include (:system-flag t) nil [69 88])
+            ("string.h" include (:system-flag t) nil [89 108])
+            ("stdint.h" include (:system-flag t) nil [109 128])
+            ("stdio.h" include (:system-flag t) nil [129 147])
+            ("fun.h" include nil nil [149 165])
+            ("VERSION" variable (:constant-flag t) nil [175 182])
+            ("SkipROM" variable (:constant-flag t) nil [195 202])
+            ("SearchROM" variable (:constant-flag t) nil [236 245])
+            ("ReadROM" variable (:constant-flag t) nil [277 284])
+            ("MatchROM" variable (:constant-flag t) nil [317 325])
+            ("AlarmROM" variable (:constant-flag t) nil [358 366])
+            ("StartConvert" variable (:constant-flag t) nil [399 411])
+            ("ReadScratchpad" variable (:constant-flag t) nil [464 478])
+            ("WriteScratchpad" variable (:constant-flag t) nil [509 524])
+            ("CopyScratchpad" variable (:constant-flag t) nil [559 573])
+            ("RecallEEPROM" variable (:constant-flag t) nil [670 682])
+            ("ReadPower" variable (:constant-flag t) nil [779 788])
+            ("EnableINT" variable (:constant-flag t) nil [849 858])
+            ("DisableINT" variable (:constant-flag t) nil [1074 1084])
+            ("DS_PORT" variable (:constant-flag t) nil [1307 1314])
+            ("DS_DQIO" variable (:constant-flag t) nil [1337 1344])
+            ("DS_RCC_PORT" variable (:constant-flag t) nil [1373 1384])
+            ("DS_PRECISION" variable (:constant-flag t) nil [1418 1430])
+            ("DS_AlarmTH" variable (:constant-flag t) nil [1493 1503])
+            ("DS_AlarmTL" variable (:constant-flag t) nil [1522 1532])
+            ("DS_CONVERT_TICK" variable (:constant-flag t) nil [1551 1566])
+            ("ResetDQ" variable (:constant-flag t) nil [1580 1587])
+            ("SetDQ" variable (:constant-flag t) nil [1636 1641])
+            ("GetDQ" variable (:constant-flag t) nil [1690 1695])
+            ("AUTOZERO" variable
+               (:dereference 1
+                :default-value "{
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+    0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF, 0xFFFF,
+}"
+                :type ("u16" type (:type "class") nil nil))
+                nil [5172 7372])
+            ("STATUS" variable
+               (:default-value "{0, 0, 0, 0, 0, 0, 0, 0, 0}"
+                :type ("Status" type
+                     (:prototype t
+                      :type "struct")
+                      nil nil))
+                nil [7391 7712])
+            ("Status" type
+               (:members 
+                  ( ("control" variable
+                       (:suffix ":1"
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7411 7425])
+                    ("close" variable
+                       (:suffix ":1"
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7438 7450])
+                    ("vent" variable
+                       (:suffix ":1"
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7463 7474])
+                    ("analog_digital" variable
+                       (:suffix ":1"
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7487 7508])
+                    ("autozero" variable
+                       (:suffix ":1"
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7527 7542])
+                    ("calibration_mode" variable
+                       (:suffix ":1"
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7559 7582])
+                    ("unit" variable
+                       (:suffix ":1"
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7597 7608])
+                    ("alarm" variable
+                       (:suffix ":1"
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7624 7636])
+                    ("debug_mode" variable
+                       (:suffix ":1"
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol classsubparts) [7647 7664]))                  
+                :type "struct")
+                nil [7391 7712])
+            ("CONFIG" variable (:type ("Config" type
+                 (:prototype t
+                  :type "struct")
+                  nil nil)) nil [7722 7743])
+            ("COMM_BUFFER_SIZE" variable (:constant-flag t) nil [7761 7777])
+            ("ORDER" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :type "unsigned char")
+                nil [7782 7827])
+            ("index" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "unsigned char")
+                nil [7837 7868])
+            ("length" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "unsigned char")
+                nil [7882 7914])
+            ("setpoint" variable
+               (:typemodifiers ("static")
+                :type "float")
+                nil [7924 7946])
+            ("step_set" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "float")
+                nil [7963 7989])
+            ("current_flow" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "float")
+                nil [8003 8033])
+            ("temperature" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "short")
+                nil [8043 8073])
+            ("ad_value" variable
+               (:dereference 1
+                :typemodifiers ("static")
+                :default-value "{0, 0}"
+                :type ("u16" type (:type "class") nil nil))
+                nil [8082 8114])
+            ("Delay_us" function
+               (:arguments 
+                  ( ("nus" variable (:type ("u32" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [8162 8170]))                  
+                :type "void")
+                nil [8148 8536])
+            ("ResetDS18B20" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [8557 8562]))                  
+                :type "void")
+                nil [8539 8745])
+            ("DS18B20WriteByte" function
+               (:arguments 
+                  ( ("Dat" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [8769 8787]))                  
+                :type "void")
+                nil [8747 9061])
+            ("DS18B20ReadByte" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9093 9098]))                  
+                :type "unsigned char")
+                nil [9063 9443])
+            ("TIM3_IRQHandler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [9466 9471]))                  
+                :type "void")
+                nil [9445 13201])
+            ("ds18b20_start" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [13222 13227]))                  
+                :type "void")
+                nil [13203 15139])
+            ("buf" variable
+               (:dereference 1
+                :type "unsigned char")
+                nil [15141 15162])
+            ("ds18b20_read" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [15183 15188]))                  
+                :type "short")
+                nil [15164 15529])
+            ("load_config" function (:type "void") nil [15546 15619])
+            ("save_config" function (:type "void") nil [15638 17660])
+            ("setautozero" function
+               (:arguments 
+                  ( ("value" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [17679 17689]))                  
+                :type "void")
+                nil [17662 17750])
+            ("getautozero" function (:type ("u16" type (:type "class") nil nil)) nil [17752 18096])
+            ("main_timer_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [18134 18139]))                  
+                :type "void")
+                nil [18113 19256])
+            ("sensor_init" function (:type "void") nil [19278 22907])
+            ("set_sensor_current" function
+               (:arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [22944 22954]))                  
+                :type "void")
+                nil [22920 23058])
+            ("set_offset" function
+               (:arguments 
+                  ( ("offset" variable (:type "int") (reparse-symbol arg-sub-list) [23089 23100]))                  
+                :type "void")
+                nil [23073 23556])
+            ("set_gain" function
+               (:arguments 
+                  ( ("gain" variable (:type "int") (reparse-symbol arg-sub-list) [23585 23594]))                  
+                :type "void")
+                nil [23571 24048])
+            ("valve_init" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [24074 24079]))                  
+                :type "void")
+                nil [24058 24714])
+            ("set_valve" function
+               (:arguments 
+                  ( ("value" variable (:type "int") (reparse-symbol arg-sub-list) [24740 24750]))                  
+                :type "void")
+                nil [24725 24854])
+            ("uart_send" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [24887 24906])
+                    ("len" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [24907 24925]))                  
+                :type "void")
+                nil [24865 25188])
+            ("timer_init" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("baud" variable (:type "int") (reparse-symbol arg-sub-list) [25225 25234]))                  
+                :type "void")
+                nil [25202 26988])
+            ("UART_Configuration" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("baud" variable (:type "int") (reparse-symbol arg-sub-list) [27032 27041]))                  
+                :type "void")
+                nil [27001 28803])
+            ("uart_init" function
+               (:arguments 
+                  ( ("baud" variable (:type "int") (reparse-symbol arg-sub-list) [28833 28842]))                  
+                :type "void")
+                nil [28818 28898])
+            ("read_bit" function
+               (:arguments 
+                  ( ("addr" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [28934 28943])
+                    ("value" variable
+                       (:pointer 1
+                        :type ("u16" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [28944 28954]))                  
+                :type "int")
+                nil [28921 29783])
+            ("write_bit" function
+               (:arguments 
+                  ( ("addr" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29799 29808])
+                    ("value" variable (:type ("u16" type (:type "class") nil nil)) (reparse-symbol arg-sub-list) [29809 29819]))                  
+                :type "int")
+                nil [29785 30946])
+            ("read_reg" function
+               (:arguments 
+                  ( ("addr" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [30961 30981])
+                    ("value" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [30982 31004]))                  
+                :type "int")
+                nil [30948 34127])
+            ("write_reg" function
+               (:arguments 
+                  ( ("addr" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [34143 34163])
+                    ("value" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [34164 34185]))                  
+                :type "int")
+                nil [34129 37985])
+            ("DMA1_Channel1_IRQHandler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [38038 38043]))                  
+                :type "void")
+                nil [38008 38522])
+            ("inte" variable
+               (:typemodifiers ("static")
+                :default-value "0"
+                :type "double")
+                nil [38524 38547])
+            ("TIM4_IRQHandler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [38583 38588]))                  
+                :type "void")
+                nil [38562 39051])
+            ("USART1_IRQHandler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39089 39094]))                  
+                :type "void")
+                nil [39066 39853])
+            ("TIM5_IRQHandler" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [39895 39900]))                  
+                :type "void")
+                nil [39874 40165])
+            ("ITM_Port8" variable (:constant-flag t) nil [40212 40221])
+            ("ITM_Port16" variable (:constant-flag t) nil [40284 40294])
+            ("ITM_Port32" variable (:constant-flag t) nil [40356 40366])
+            ("DEMCR" variable (:constant-flag t) nil [40428 40433])
+            ("TRCENA" variable (:constant-flag t) nil [40496 40502])
+            ("__FILE" type
+               (:members 
+                  ( ("handle" variable (:type "int") (reparse-symbol classsubparts) [40540 40551]))                  
+                :type "struct")
+                nil [40524 40580])
+            ("__stdout" variable
+               (:typemodifiers ("static")
+                :type ("FILE" type (:type "class") nil nil))
+                nil [40581 40602])
+            ("__stdin" variable
+               (:typemodifiers ("static")
+                :type ("FILE" type (:type "class") nil nil))
+                nil [40603 40623])
+            ("fputc" function
+               (:arguments 
+                  ( ("ch" variable (:type "int") (reparse-symbol arg-sub-list) [40665 40672])
+                    ("f" variable
+                       (:pointer 1
+                        :type ("FILE" type (:type "class") nil nil))
+                        (reparse-symbol arg-sub-list) [40673 40681]))                  
+                :type "int")
+                nil [40655 40800])
+            ("main" function
+               (:arguments 
+                  ( ("" variable (:type "void") (reparse-symbol arg-sub-list) [40818 40823]))                  
+                :type "int")
+                nil [40809 41261]))          
+      :file "main.c"
+      :pointmax 41262
+      :fsize 44333
+      :lastmodtime '(22101 3998 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("DisableINT" (spp-arg-list nil 1084 . 1086) . 
+              ((DO "do" 1120 . 1122) (semantic-list "{                                        \\
+        __set_PRIMASK(1);                       \\
+        __set_FAULTMASK(1);                     \\
+    }" 1123 . 1271) (WHILE "while" 1272 . 1277) (semantic-list "(0)" 1278 . 1281)))
+          ("ITM_Port32" (spp-arg-list ("n") 37345 . 37348) . ((semantic-list "(*((volatile unsigned long *)(0xE0000000+4*n)))" 37351 . 37398)))
+          ("TRCENA" . ((number "0x01000000" 37491 . 37501)))
+          ("ReadPower" . ((number "0xB4" 795 . 799)))
+          ("DS_RCC_PORT" . ((symbol "RCC_APB2Periph_GPIOB" 1389 . 1409)))
+          ("DEMCR" . ((semantic-list "(*((volatile unsigned long *)(0xE000EDFC)))" 37423 . 37466)))
+          ("SearchROM" . ((number "0xF0" 252 . 256)))
+          ("DS_CONVERT_TICK" . ((number "1000" 1567 . 1571)))
+          ("SetDQ" (spp-arg-list nil 1641 . 1643) . ((symbol "GPIO_SetBits" 1652 . 1664) (semantic-list "(DS_PORT,DS_DQIO)" 1664 . 1681)))
+          ("SkipROM" . ((number "0xCC" 211 . 215)))
+          ("ReadROM" . ((number "0x33" 293 . 297)))
+          ("MatchROM" . ((number "0x55" 333 . 337)))
+          ("RecallEEPROM" . ((number "0xB8" 686 . 690)))
+          ("COMM_BUFFER_SIZE" . ((number "256" 5123 . 5126)))
+          ("DS_PRECISION" . ((number "0x7f" 1434 . 1438)))
+          ("CopyScratchpad" . ((number "0x48" 575 . 579)))
+          ("EnableINT" (spp-arg-list nil 858 . 860) . 
+              ((DO "do" 895 . 897) (semantic-list "{                                        \\
+        __set_PRIMASK(0);                       \\
+        __set_FAULTMASK(0);                     \\
+    }" 898 . 1046) (WHILE "while" 1047 . 1052) (semantic-list "(0)" 1053 . 1056)))
+          ("GetDQ" (spp-arg-list nil 1695 . 1697) . ((symbol "GPIO_ReadInputDataBit" 1706 . 1727) (semantic-list "(DS_PORT,DS_DQIO)" 1727 . 1744)))
+          ("VERSION" . ((number "1" 183 . 184)))
+          ("AlarmROM" . ((number "0xEC" 374 . 378)))
+          ("DS_AlarmTH" . ((number "0x64" 1509 . 1513)))
+          ("ITM_Port8" (spp-arg-list ("n") 37200 . 37203) . ((semantic-list "(*((volatile unsigned char *)(0xE0000000+4*n)))" 37207 . 37254)))
+          ("WriteScratchpad" . ((number "0x4E" 525 . 529)))
+          ("ReadScratchpad" . ((number "0xBE" 480 . 484)))
+          ("ResetDQ" (spp-arg-list nil 1587 . 1589) . ((symbol "GPIO_ResetBits" 1596 . 1610) (semantic-list "(DS_PORT,DS_DQIO)" 1610 . 1627)))
+          ("DS_PORT" . ((symbol "GPIOB" 1323 . 1328)))
+          ("DS_DQIO" . ((symbol "GPIO_Pin_12" 1353 . 1364)))
+          ("ITM_Port16" (spp-arg-list ("n") 37273 . 37276) . ((semantic-list "(*((volatile unsigned short*)(0xE0000000+4*n)))" 37279 . 37326)))
+          ("StartConvert" . ((number "0x44" 415 . 419)))
+          ("DS_AlarmTL" . ((number "0x8a" 1538 . 1542)))
+          )
+)
+    (semanticdb-table "fun.h"
+      :major-mode 'c-mode
+      :tags 
+        '( ("_FUNC_" variable (:constant-flag t) nil [24 30])
+            ("err" variable
+               (:typemodifiers ("static")
+                :default-value "NOR"
+                :type ("Error" type
+                     (:prototype t
+                      :type "enum")
+                      nil nil))
+                nil [50 438])
+            ("Error" type
+               (:members 
+                  ( ("NOR" variable
+                       (:constant-flag t
+                        :default-value (79 80)
+                        :type "int")
+                        (reparse-symbol enumsubparts) [73 80])
+                    ("WRITE_FILE_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [86 103])
+                    ("READ_FILE_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [113 129])
+                    ("READ_LEN_2" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [139 150])
+                    ("CRC_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [160 170])
+                    ("ID_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [180 189])
+                    ("INVALID_ORDER" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [199 213])
+                    ("INVALID_ADDR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [223 236])
+                    ("INVALID_VALUE" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [246 260])
+                    ("READ_RESPONSE_DATA_SUM_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [270 299])
+                    ("READ_LEN_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [309 324])
+                    ("ADDR_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [335 346])
+                    ("VALUE_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [357 369])
+                    ("UNKNOWN_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [380 394])
+                    ("USB7325_ERROR" variable
+                       (:constant-flag t
+                        :type "int")
+                        (reparse-symbol enumsubparts) [405 419]))                  
+                :type "enum")
+                nil [50 438])
+            ("add" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("num1" variable (:type "int") (reparse-symbol arg-sub-list) [448 457])
+                    ("num2" variable (:type "int") (reparse-symbol arg-sub-list) [458 467]))                  
+                :type "int")
+                nil [440 468])
+            ("multiply" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("num1" variable (:type "int") (reparse-symbol arg-sub-list) [482 491])
+                    ("num2" variable (:type "int") (reparse-symbol arg-sub-list) [492 501]))                  
+                :type "int")
+                nil [469 502])
+            ("divide" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("num1" variable (:type "int") (reparse-symbol arg-sub-list) [514 523])
+                    ("num2" variable (:type "int") (reparse-symbol arg-sub-list) [524 533]))                  
+                :type "int")
+                nil [503 534])
+            ("acceleration_f" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("cap" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [557 568])
+                    ("input" variable (:type "float") (reparse-symbol arg-sub-list) [569 581])
+                    ("scale" variable (:type "float") (reparse-symbol arg-sub-list) [582 594])
+                    ("charge" variable (:type "float") (reparse-symbol arg-sub-list) [595 608])
+                    ("discharge" variable (:type "float") (reparse-symbol arg-sub-list) [609 625]))                  
+                :type "float")
+                nil [536 626])
+            ("calibration_f" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("axis" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [648 661])
+                    ("input" variable (:type "float") (reparse-symbol arg-sub-list) [662 674]))                  
+                :type "float")
+                nil [628 675])
+            ("calibration" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("axis" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [692 703])
+                    ("input" variable (:type "int") (reparse-symbol arg-sub-list) [704 714]))                  
+                :type "int")
+                nil [676 715])
+            ("kalman_filter_f" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [739 753])
+                    ("pg" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [754 764])
+                    ("kalman" variable (:type "float") (reparse-symbol arg-sub-list) [765 778])
+                    ("input" variable (:type "float") (reparse-symbol arg-sub-list) [779 791]))                  
+                :type "float")
+                nil [717 792])
+            ("pid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("prev_fp" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [802 817])
+                    ("inte" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [818 831])
+                    ("quick_start" variable (:type "float") (reparse-symbol arg-sub-list) [832 850])
+                    ("fkp" variable (:type "float") (reparse-symbol arg-sub-list) [851 861])
+                    ("fki" variable (:type "float") (reparse-symbol arg-sub-list) [862 872])
+                    ("fkd" variable (:type "float") (reparse-symbol arg-sub-list) [873 883])
+                    ("fvkd" variable (:type "float") (reparse-symbol arg-sub-list) [892 903])
+                    ("set" variable (:type "float") (reparse-symbol arg-sub-list) [904 914])
+                    ("val" variable (:type "float") (reparse-symbol arg-sub-list) [915 925])
+                    ("override" variable (:type "int") (reparse-symbol arg-sub-list) [926 939]))                  
+                :type "int")
+                nil [794 940])
+            ("analog_pid" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("set" variable (:type "int") (reparse-symbol arg-sub-list) [957 965])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [966 974])
+                    ("charge" variable (:type "int") (reparse-symbol arg-sub-list) [975 986])
+                    ("scale" variable (:type "int") (reparse-symbol arg-sub-list) [987 997])
+                    ("integration_set" variable (:type "int") (reparse-symbol arg-sub-list) [998 1018])
+                    ("override" variable (:type "int") (reparse-symbol arg-sub-list) [1019 1032]))                  
+                :type "int")
+                nil [942 1033])
+            ("modbus_slave_recv" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1057 1076])
+                    ("index" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1077 1097])
+                    ("id" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1098 1115]))                  
+                :type "int")
+                nil [1035 1116])
+            ("MAKEUSHORT" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("a" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1144 1160])
+                    ("b" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [1161 1177]))                  
+                :type "unsigned short")
+                nil [1118 1178])
+            ("CRC16" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("puchMsg" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1200 1223])
+                    ("usDataLen" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [1224 1249]))                  
+                :type "unsigned short")
+                nil [1179 1250])
+            ("make_read_order" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1272 1293])
+                    ("read_len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1294 1308])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1309 1316])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [1317 1326])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [1327 1335]))                  
+                :type "int")
+                nil [1252 1336])
+            ("test_read_response" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1367 1388])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [1389 1400])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1401 1408])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [1409 1418])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [1419 1427]))                  
+                :type ("Error" type (:type "enum") nil nil))
+                nil [1337 1428])
+            ("get_read_data" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1458 1479])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [1480 1486]))                  
+                :type "unsigned short")
+                nil [1429 1487])
+            ("make_write_order" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1509 1530])
+                    ("read_len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1531 1545])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1546 1553])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [1554 1563])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [1585 1593])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [1594 1615]))                  
+                :type "int")
+                nil [1488 1616])
+            ("test_write_response" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1648 1669])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [1670 1681])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1682 1689])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [1721 1730])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [1731 1739])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [1740 1761]))                  
+                :type ("Error" type (:type "enum") nil nil))
+                nil [1617 1762])
+            ("make_read_and_write_order" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [1793 1814])
+                    ("read_len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1815 1829])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [1830 1837])
+                    ("read_addr" variable (:type "int") (reparse-symbol arg-sub-list) [1868 1882])
+                    ("read_sum" variable (:type "int") (reparse-symbol arg-sub-list) [1883 1896])
+                    ("write_addr" variable (:type "int") (reparse-symbol arg-sub-list) [1897 1912])
+                    ("write_sum" variable (:type "int") (reparse-symbol arg-sub-list) [1913 1927])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [1958 1979]))                  
+                :type "int")
+                nil [1763 1980])
+            ("test_write_and_read_response" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [2021 2042])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [2043 2054])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [2055 2062])
+                    ("read_addr" variable (:type "int") (reparse-symbol arg-sub-list) [2103 2117])
+                    ("read_sum" variable (:type "int") (reparse-symbol arg-sub-list) [2118 2131])
+                    ("write_addr" variable (:type "int") (reparse-symbol arg-sub-list) [2132 2147])
+                    ("write_sum" variable (:type "int") (reparse-symbol arg-sub-list) [2188 2202])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [2203 2224]))                  
+                :type ("Error" type (:type "enum") nil nil))
+                nil [1981 2225])
+            ("cal_response_time" function
+               (:prototype-flag t
+                :arguments 
+                  ( ("setTime" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2249 2263])
+                    ("responseTime" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2264 2283])
+                    ("setVector" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2284 2300])
+                    ("valueVector" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2323 2341])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [2342 2351])
+                    ("error" variable (:type "int") (reparse-symbol arg-sub-list) [2352 2362])
+                    ("step" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2363 2374])
+                    ("step_sum" variable (:type "int") (reparse-symbol arg-sub-list) [2375 2388]))                  
+                :type "int")
+                nil [2227 2389]))          
+      :file "fun.h"
+      :pointmax 2397
+      :fsize 2457
+      :lastmodtime '(22100 379 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("_FUNC_")
+          )
+)
+    (semanticdb-table "fun.c"
+      :major-mode 'c-mode
+      :tags 
+        '( ("math.h" include (:system-flag t) nil [1 18])
+            ("stdio.h" include (:system-flag t) nil [19 37])
+            ("limits.h" include (:system-flag t) nil [38 57])
+            ("fun.h" include nil nil [59 75])
+            ("assert.h" include (:system-flag t) nil [138 157])
+            ("add" function
+               (:arguments 
+                  ( ("num1" variable (:type "int") (reparse-symbol arg-sub-list) [328 337])
+                    ("num2" variable (:type "int") (reparse-symbol arg-sub-list) [338 347]))                  
+                :type "int")
+                nil [320 606])
+            ("multiply" function
+               (:arguments 
+                  ( ("num1" variable (:type "int") (reparse-symbol arg-sub-list) [630 639])
+                    ("num2" variable (:type "int") (reparse-symbol arg-sub-list) [640 649]))                  
+                :type "int")
+                nil [617 877])
+            ("divide" function
+               (:arguments 
+                  ( ("num1" variable (:type "int") (reparse-symbol arg-sub-list) [899 908])
+                    ("num2" variable (:type "int") (reparse-symbol arg-sub-list) [909 918]))                  
+                :type "int")
+                nil [888 989])
+            ("acceleration_f" function
+               (:arguments 
+                  ( ("cap" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [1022 1033])
+                    ("input" variable (:type "float") (reparse-symbol arg-sub-list) [1034 1046])
+                    ("scale" variable (:type "float") (reparse-symbol arg-sub-list) [1047 1059])
+                    ("charge" variable (:type "float") (reparse-symbol arg-sub-list) [1060 1073])
+                    ("discharge" variable (:type "float") (reparse-symbol arg-sub-list) [1074 1090]))                  
+                :type "float")
+                nil [1001 1380])
+            ("acceleration" function
+               (:arguments 
+                  ( ("cap" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [1399 1408])
+                    ("input" variable (:type "int") (reparse-symbol arg-sub-list) [1409 1419])
+                    ("scale" variable (:type "int") (reparse-symbol arg-sub-list) [1420 1430])
+                    ("charge" variable (:type "int") (reparse-symbol arg-sub-list) [1431 1442]))                  
+                :type "int")
+                nil [1382 1852])
+            ("analog_pid" function
+               (:arguments 
+                  ( ("set" variable (:type "int") (reparse-symbol arg-sub-list) [1889 1897])
+                    ("val" variable (:type "int") (reparse-symbol arg-sub-list) [1898 1906])
+                    ("charge" variable (:type "int") (reparse-symbol arg-sub-list) [1907 1918])
+                    ("scale" variable (:type "int") (reparse-symbol arg-sub-list) [1919 1929])
+                    ("integration_set" variable (:type "int") (reparse-symbol arg-sub-list) [1930 1950])
+                    ("override" variable (:type "int") (reparse-symbol arg-sub-list) [1951 1964]))                  
+                :type "int")
+                nil [1874 2727])
+            ("calibration" function
+               (:arguments 
+                  ( ("axis" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [2759 2770])
+                    ("input" variable (:type "int") (reparse-symbol arg-sub-list) [2771 2781]))                  
+                :type "int")
+                nil [2743 2968])
+            ("calibration_f" function
+               (:arguments 
+                  ( ("axis" variable
+                       (:dereference 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [2990 3003])
+                    ("input" variable (:type "float") (reparse-symbol arg-sub-list) [3004 3016]))                  
+                :type "float")
+                nil [2970 3203])
+            ("kalman_filter_f" function
+               (:arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3236 3250])
+                    ("pg" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3251 3261])
+                    ("kalman" variable (:type "float") (reparse-symbol arg-sub-list) [3262 3275])
+                    ("input" variable (:type "float") (reparse-symbol arg-sub-list) [3276 3288]))                  
+                :type "float")
+                nil [3214 3524])
+            ("kalman_filter" function
+               (:arguments 
+                  ( ("output" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3558 3570])
+                    ("pg" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [3571 3579])
+                    ("kalman" variable (:type "int") (reparse-symbol arg-sub-list) [3580 3591])
+                    ("input" variable (:type "int") (reparse-symbol arg-sub-list) [3592 3602]))                  
+                :type "int")
+                nil [3540 3886])
+            ("pid_f" function
+               (:arguments 
+                  ( ("prev_p" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3909 3923])
+                    ("i" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3924 3933])
+                    ("quick_start" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [3934 3953])
+                    ("kp" variable (:type "float") (reparse-symbol arg-sub-list) [3954 3963])
+                    ("ki" variable (:type "float") (reparse-symbol arg-sub-list) [3964 3973])
+                    ("kd" variable (:type "float") (reparse-symbol arg-sub-list) [3986 3995])
+                    ("set" variable (:type "float") (reparse-symbol arg-sub-list) [3996 4006])
+                    ("val" variable (:type "float") (reparse-symbol arg-sub-list) [4007 4017])
+                    ("override" variable (:type "int") (reparse-symbol arg-sub-list) [4018 4031]))                  
+                :type "float")
+                nil [3897 4492])
+            ("pid" function
+               (:arguments 
+                  ( ("prev_fp" variable
+                       (:pointer 1
+                        :type "float")
+                        (reparse-symbol arg-sub-list) [4516 4531])
+                    ("inte" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [4532 4545])
+                    ("quick_start" variable (:type "float") (reparse-symbol arg-sub-list) [4546 4564])
+                    ("fkp" variable (:type "float") (reparse-symbol arg-sub-list) [4565 4575])
+                    ("fki" variable (:type "float") (reparse-symbol arg-sub-list) [4576 4586])
+                    ("fkd" variable (:type "float") (reparse-symbol arg-sub-list) [4587 4597])
+                    ("fvkd" variable (:type "float") (reparse-symbol arg-sub-list) [4606 4617])
+                    ("set" variable (:type "float") (reparse-symbol arg-sub-list) [4639 4649])
+                    ("val" variable (:type "float") (reparse-symbol arg-sub-list) [4650 4660])
+                    ("override" variable (:type "int") (reparse-symbol arg-sub-list) [4661 4674]))                  
+                :type "int")
+                nil [4508 5739])
+            ("MAKEUSHORT" function
+               (:arguments 
+                  ( ("a" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [5791 5807])
+                    ("b" variable (:type "unsigned char") (reparse-symbol arg-sub-list) [5808 5824]))                  
+                :type "unsigned short")
+                nil [5765 5873])
+            ("CRC16" function
+               (:arguments 
+                  ( ("puchMsg" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [5907 5930])
+                    ("usDataLen" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [5931 5956]))                  
+                :type "unsigned short")
+                nil [5886 9269])
+            ("return_invalid_order" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9306 9324]))                  
+                :type "int")
+                nil [9281 9543])
+            ("return_invalid_addr" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9579 9598]))                  
+                :type "int")
+                nil [9555 9803])
+            ("return_invalid_value" function
+               (:arguments 
+                  ( ("buf" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [9839 9858]))                  
+                :type "int")
+                nil [9814 10065])
+            ("make_read_order" function
+               (:arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [14770 14791])
+                    ("read_len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [14792 14806])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [14807 14814])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [14815 14824])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [14825 14833]))                  
+                :type "int")
+                nil [14750 15153])
+            ("test_read_response" function
+               (:arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [15200 15221])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [15222 15233])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [15234 15241])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [15242 15251])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [15252 15260]))                  
+                :type ("Error" type (:type "enum") nil nil))
+                nil [15170 15934])
+            ("get_read_data" function
+               (:arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [15979 16000])
+                    ("i" variable (:type "int") (reparse-symbol arg-sub-list) [16001 16007]))                  
+                :type "unsigned short")
+                nil [15950 16084])
+            ("make_write_order" function
+               (:arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [16116 16137])
+                    ("read_len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [16138 16152])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [16153 16160])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [16161 16170])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [16192 16200])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [16201 16222]))                  
+                :type "int")
+                nil [16095 17119])
+            ("test_write_response" function
+               (:arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [17167 17188])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [17189 17200])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [17201 17208])
+                    ("addr" variable (:type "int") (reparse-symbol arg-sub-list) [17240 17249])
+                    ("sum" variable (:type "int") (reparse-symbol arg-sub-list) [17250 17258])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [17259 17280]))                  
+                :type ("Error" type (:type "enum") nil nil))
+                nil [17136 18618])
+            ("make_read_and_write_order" function
+               (:arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [18662 18683])
+                    ("read_len" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [18684 18698])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [18699 18706])
+                    ("read_addr" variable (:type "int") (reparse-symbol arg-sub-list) [18737 18751])
+                    ("read_sum" variable (:type "int") (reparse-symbol arg-sub-list) [18752 18765])
+                    ("write_addr" variable (:type "int") (reparse-symbol arg-sub-list) [18766 18781])
+                    ("write_sum" variable (:type "int") (reparse-symbol arg-sub-list) [18782 18796])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [18827 18848]))                  
+                :type "int")
+                nil [18632 19709])
+            ("test_write_and_read_response" function
+               (:arguments 
+                  ( ("order" variable
+                       (:pointer 1
+                        :type "unsigned char")
+                        (reparse-symbol arg-sub-list) [19769 19790])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [19791 19802])
+                    ("id" variable (:type "int") (reparse-symbol arg-sub-list) [19803 19810])
+                    ("read_addr" variable (:type "int") (reparse-symbol arg-sub-list) [19851 19865])
+                    ("read_sum" variable (:type "int") (reparse-symbol arg-sub-list) [19866 19879])
+                    ("write_addr" variable (:type "int") (reparse-symbol arg-sub-list) [19880 19895])
+                    ("write_sum" variable (:type "int") (reparse-symbol arg-sub-list) [19936 19950])
+                    ("data" variable
+                       (:pointer 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [19951 19972]))                  
+                :type ("Error" type (:type "enum") nil nil))
+                nil [19729 20864])
+            ("MATRIX_MAX" variable (:constant-flag t) nil [20874 20884])
+            ("minmul" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [20918 20928])
+                    ("y" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [20929 20939])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [20940 20951])
+                    ("matrix" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [20952 20990])
+                    ("times" variable (:type "int") (reparse-symbol arg-sub-list) [21010 21020]))                  
+                :type "void")
+                nil [20899 22070])
+            ("calmatrix" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("matrix" variable
+                       (:dereference 2
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [22122 22160])
+                    ("x" variable (:type "int") (reparse-symbol arg-sub-list) [22161 22167])
+                    ("times" variable (:type "int") (reparse-symbol arg-sub-list) [22168 22178]))                  
+                :type "void")
+                nil [22100 22493])
+            ("mymatrix" function
+               (:typemodifiers ("static")
+                :arguments 
+                  ( ("x" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [22557 22567])
+                    ("y" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [22568 22578])
+                    ("res" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [22579 22591])
+                    ("length" variable (:type "int") (reparse-symbol arg-sub-list) [22592 22603])
+                    ("times" variable (:type "int") (reparse-symbol arg-sub-list) [22604 22614]))                  
+                :type "void")
+                nil [22536 22928])
+            ("exam" function
+               (:arguments 
+                  ( ("x" variable (:type "float") (reparse-symbol arg-sub-list) [22968 22976])
+                    ("res" variable
+                       (:pointer 1
+                        :type "double")
+                        (reparse-symbol arg-sub-list) [22977 22989]))                  
+                :type "float")
+                nil [22957 23130])
+            ("cal_response_time" function
+               (:arguments 
+                  ( ("set_time" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23164 23178])
+                    ("response_time" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23179 23198])
+                    ("set" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23199 23208])
+                    ("value" variable
+                       (:pointer 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23209 23220])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [23221 23230])
+                    ("error" variable (:type "int") (reparse-symbol arg-sub-list) [23253 23263])
+                    ("step" variable
+                       (:dereference 1
+                        :type "int")
+                        (reparse-symbol arg-sub-list) [23264 23275])
+                    ("step_sum" variable (:type "int") (reparse-symbol arg-sub-list) [23276 23289]))                  
+                :type "int")
+                nil [23142 24565])
+            ("setautozero" function
+               (:arguments 
+                  ( ("data" variable
+                       (:dereference 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [24609 24631])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [24661 24670])
+                    ("value" variable (:type "unsigned short") (reparse-symbol arg-sub-list) [24696 24717]))                  
+                :type "int")
+                nil [24593 25031])
+            ("getautozero" function
+               (:arguments 
+                  ( ("data" variable
+                       (:dereference 1
+                        :type "unsigned short")
+                        (reparse-symbol arg-sub-list) [25060 25082])
+                    ("size" variable (:type "int") (reparse-symbol arg-sub-list) [25083 25092]))                  
+                :type "unsigned short")
+                nil [25033 25255]))          
+      :file "fun.c"
+      :pointmax 25256
+      :fsize 26803
+      :lastmodtime '(22101 29658 0 0)
+      :unmatched-syntax nil
+      :lexical-table 
+        '(("MATRIX_MAX" . ((number "10" 20885 . 20887)))
+          )
+))
+  :file "!drive_e!src!stm32_usb!source!semantic.cache"
+  :semantic-tag-version "2.0"
+  :semanticdb-version "2.2")
