@@ -1,20 +1,20 @@
 
 ;; ----- smex-history -----
 (
- shell
+ c-mode
  evil-mode
- list-packages
- calc
- align
- c-set-style
+ shell
  eval-buffer
+ fill-paragraph
+ describe-variable
+ eshell
 )
 
 ;; ----- smex-data -----
 (
- (shell . 31)
- (c-set-style . 3)
- (eval-buffer . 9)
+ (shell . 36)
+ (c-set-style . 4)
+ (eval-buffer . 14)
  (scroll-bar-mode . 1)
  (customize-themes . 4)
  (align . 8)
@@ -31,7 +31,11 @@
  (point-to-register . 1)
  (viper-mode . 1)
  (list-packages . 2)
- (evil-mode . 24)
- (kill-emacs . 2)
+ (evil-mode . 30)
+ (kill-emacs . 4)
  (calc . 1)
+ (eshell . 1)
+ (describe-variable . 3)
+ (fill-paragraph . 2)
+ (c-mode . 1)
 )
